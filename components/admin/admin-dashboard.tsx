@@ -53,7 +53,7 @@ export const AdminDashboard = () => {
                   </thead>
                   <tbody>
                     {teachers.map(({id, name, email, science, group}) => (
-                    <tr className="border-b dark:border-white">
+                    <tr key={id} className="border-b dark:border-white">
                       <td className="whitespace-nowrap px-6 py-4 font-medium flex items-center">
                         {id}
                       </td>
